@@ -2,6 +2,7 @@
 **Municipal Financial Management System**
 **Group**: 6
 **Members**: 
+Martin 
 Chiedza 
 Jeremiah 
 Vistorino
@@ -19,7 +20,8 @@ Our system aims to create a financial management system in C that displays and c
 **Compile**
 **Run**
  ** Responsibilities**
-  CHiedza
+  Martin
+  Chiedza
   Gloria
   Vistorina
   Jeremiah
