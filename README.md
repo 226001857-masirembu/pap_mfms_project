@@ -18,11 +18,16 @@ Our system aims to create a financial management system in C that displays and c
 - Asset management: add, display, and search asset records.
 - Reports: show employee, budget, supplier, and asset information.
 - Input validation: handle invalid menu choices and values where appropriate.
+
 **Compile**
+
   WE compiled using GCC:
   gcc. main.c employees.c budget.c suppliers.c assets.c report.c -o mfms
+
 **Run**
-  ./mfms
+
+   ./mfms
+
 **Responsibilities**
   Andreas -  Employee Management 
   Martin - Functions, integration and validation 
@@ -31,6 +36,7 @@ Our system aims to create a financial management system in C that displays and c
   Vistorina - Supplier Management 
   Jeremiah - Asset Management 
   Selwyn - Reports 
+ 
   **Repository link** - https://github.com/226001857-masirembu/pap_mfms_project
   
   
