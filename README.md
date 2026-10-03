@@ -6,12 +6,18 @@
 
 **Members**: 
 Andreas
+
 Martin 
+
 Chiedza 
+
 Jeremiah 
+
 Vistorino
-Gloria
+Glorie
+
 Selwyn 
+
 **Project Description**
 Our system aims to create a financial management system in C that displays and calculates employee, budget, supplier, and asset information, and generates detailed reports on these records.
 **System Features**
@@ -36,7 +42,7 @@ Our system aims to create a financial management system in C that displays and c
   
   Chiedza - Testing, documentation and Git coordination 
   
-  Gloria -  Budget Management 
+  Glorie -  Budget Management 
   
   Vistorina - Supplier Management 
   
