@@ -42,8 +42,8 @@ as one system.
 ## 3. System Design
 
 The system was implemented in C using a modular structure. Each major
-area of functionality is separated into its own source (`.c`) and header
-(`.h`) files.
+area of functionality is separated into its own source and header
+ files.
 
 ### 3.1 Employee Management
 
@@ -65,7 +65,7 @@ search supplier information using supplier ID or name.
 ### 3.4 Asset Management
 
 The Asset module manages municipal asset records. Users can add, display
-and search asset information. Purchase values are checked to prevent
+and search asset information. Purchse values are checked to prevent
 negative values.
 
 ### 3.5 Reports
@@ -115,7 +115,7 @@ strings.
 
 During final testing, two validation limitations were identified. The
 Employee module accepted a negative basic salary, and the Supplier
-module accepted a blank supplier name. These issues were recorded as
+module accepted a blank supplier nae. These issues were recorded as
 failed tests and are recommended for future improvement.
 
 ------------------------------------------------------------------------
@@ -151,7 +151,7 @@ failed:
 2.  **Empty supplier name:** The Supplier module accepted a blank
     supplier name.
 
-These limitations were documented rather than making last-minute changes
+These limitations were documened rather than making last-minute changes
 to the integrated system.
 
 Supporting screenshots are included in the testing evidence where
@@ -181,7 +181,7 @@ the project.
 One major challenge involved compilation and integration of the Budget
 module. The module initially contained compilation and implementation
 issues. The Budget source and header files were corrected and the module
-was successfully compiled.
+was successfully complied.
 
 Another challenge involved integrating independently developed modules
 into the main program. The modules were linked through the main program
@@ -202,7 +202,7 @@ navigated between modules, processed valid records and generated
 reports.
 
 The final testing record contains 24 tests covering compilation,
-navigation, module functionality, reports, input validation, searching,
+navigation, module functionality, reports, inpu validation, searching,
 over-budget detection and system exit.
 
 Two validation tests failed:
