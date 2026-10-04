@@ -1,148 +1,228 @@
 # Municipal Financial Management System
+
 ## Technical Report
 
 ### Group 7
 
----
+------------------------------------------------------------------------
 
 ## 1. Introduction
 
-The Municipal Financial Management System (MFMS) is a C-based system designed to assist with the management of municipal financial information.
+The Municipal Financial Management System (MFMS) is a C-based system
+designed to assist with the management of municipal financial
+information.
 
-The system manages employee, budget, supplier, and asset information and provides reports based on these records.
+The system manages employee, budget, supplier and asset information and
+provides reports based on these records.
 
-The project was developed collaboratively using GitHub for source-code management, documentation, and team coordination.
+The project was developed collaboratively using GitHub for source-code
+management, documentation and team coordination.
 
----
+------------------------------------------------------------------------
 
 ## 2. System Overview
 
-The system consists of several modules, with each module responsible for a specific area of municipal financial management.
+The system consists of several modules, with each module responsible for
+a specific area of municipal financial management.
 
 The main modules are:
 
-- Employee Management
-- Budget Management
-- Supplier Management
-- Asset Management
-- Reports
-- Main Program and Integration
+-   Employee Management
+-   Budget Management
+-   Supplier Management
+-   Asset Management
+-   Reports
+-   Main Program and Integration
 
-The modules are integrated through the main program and are designed to work together as one system.
+The modules are integrated through the main program and operate together
+as one system.
 
----
+------------------------------------------------------------------------
 
 ## 3. System Design
 
-The system uses  C and  each major area of functionality is implemented as a separate module.
+The system was implemented in C using a modular structure. Each major
+area of functionality is separated into its own source (`.c`) and header
+(`.h`) files.
 
 ### 3.1 Employee Management
 
-This module manages employee records and allows for  adding, displaying, and searching employee information. It also handles relevant salary calculations.
+The Employee module manages employee records and allows users to add,
+display and search employee information. It also calculates gross salary
+from the basic salary and allowances.
 
 ### 3.2 Budget Management
 
-This module manages municipal budget information. It records budgets and expenditure and calculates remaining funds.
+The Budget module manages municipal budget information. It records
+allocated budgets and expenditure, calculates remaining funds and
+identifies departments whose expenditure exceeds their allocation.
 
 ### 3.3 Supplier Management
 
-This module manages supplier records. Users can add, display, and search for supplier information.
+The Supplier module manages supplier records. Users can add, display and
+search supplier information using supplier ID or name.
 
 ### 3.4 Asset Management
 
-This module manages municipal asset records. Users can add, display, and search for asset information.
+The Asset module manages municipal asset records. Users can add, display
+and search asset information. Purchase values are checked to prevent
+negative values.
 
 ### 3.5 Reports
 
-The reports module displays information from the different areas of the system, including employees, budgets, suppliers, and assets.
+The Reports module provides employee, budget, supplier, asset and
+summary reports. These reports present stored information and calculated
+totals.
 
 ### 3.6 Main Program and Integration
 
-The main program provides the user interface and connects the different modules. It handles menu navigation and coordinates access to the system's functionality.
+The main program provides the user interface and connects the different
+modules. It handles the main menu, module navigation and shared input
+validation.
 
----
+------------------------------------------------------------------------
 
 ## 4. Implementation
 
-The system was implemented using the C programming language.
+The system was implemented using the C programming language and follows
+a modular structure.
 
-The project uses separate source (`.c`) and header (`.h`) files to organize the different modules.
+The project uses separate source (`.c`) and header (`.h`) files for the
+Employee, Budget, Supplier, Asset and Reports modules. The main program
+handles menu navigation and integration between the modules.
 
-The project is compiled using the GCC compiler.
+The project was compiled using GCC with the C99 standard and warning
+flags:
 
-The final compilation command will be documented after all modules have been completed and integrated.
+``` bash
+gcc -std=c99 -Wall -Wextra main.c employee.c budget.c suppliers.c assets.c reports.c -o mfms
+```
 
----
+The complete project compiled successfully with no compiler errors or
+warnings.
+
+------------------------------------------------------------------------
 
 ## 5. Input Validation
 
-Input validation is included to handle invalid menu choices and inappropriate input values where applicable.
+Input validation was implemented throughout the system to handle invalid
+menu choices, non-numeric input and inappropriate values.
 
-Validation is tested to ensure that the system does not terminate unexpectedly when a user enters invalid information.
+The Budget module rejects negative allocated budget and expenditure
+values. The Asset module rejects negative purchase values. The main
+program also provides shared validation for numeric input and non-empty
+strings.
 
-Specific validation results will be documented during final system testing.
+During final testing, two validation limitations were identified. The
+Employee module accepted a negative basic salary, and the Supplier
+module accepted a blank supplier name. These issues were recorded as
+failed tests and are recommended for future improvement.
 
----
+------------------------------------------------------------------------
 
 ## 6. Testing
 
-Testing will be performed after all modules have been completed and integrated.
+The completed MFMS was tested after integration.
 
-The testing process will include:
+Testing covered:
 
-- Main menu testing
-- Employee management testing
-- Budget management testing
-- Supplier management testing
-- Asset management testing
-- Reports testing
-- Invalid input testing
-- Full system integration testing
+-   Main menu and navigation
+-   Employee Management
+-   Budget Management
+-   Supplier Management
+-   Asset Management
+-   Reports
+-   Invalid numeric input
+-   Negative salary, budget and asset values
+-   Supplier search
+-   Budget search
+-   Over-budget detection
+-   System exit
+-   Full project compilation and integration
 
-Testing results and screenshots will be documented in the project's testing documentation.
+A total of 24 tests were recorded. The final test results document the
+expected result, actual result and PASS/FAIL status for each test.
 
----
+Most functional and validation tests passed. Two validation tests
+failed:
+
+1.  **Negative basic salary:** The Employee module accepted a negative
+    basic salary.
+2.  **Empty supplier name:** The Supplier module accepted a blank
+    supplier name.
+
+These limitations were documented rather than making last-minute changes
+to the integrated system.
+
+Supporting screenshots are included in the testing evidence where
+available.
+
+------------------------------------------------------------------------
 
 ## 7. GitHub Collaboration
 
-we used GitHub  to manage the group's source code and project documentation.
+GitHub was used to manage the group's source code, documentation and
+contribution records.
 
-The repository contains the project's source code, documentation, testing information, and contribution records.
+The repository contains the project's source code, documentation,
+testing information and individual contribution records.
 
-Each group member was assigned specific responsibilities within the project.
+Each group member was assigned specific responsibilities within the
+project, and contribution evidence was maintained through the repository
+and contribution records.
 
-Contribution records are maintained in the `contributions` directory.
-
----
+------------------------------------------------------------------------
 
 ## 8. Challenges and Solutions
 
-Challenges encountered during development will be documented as the project progresses.
+Several integration and development challenges were encountered during
+the project.
 
-These may include:
+One major challenge involved compilation and integration of the Budget
+module. The module initially contained compilation and implementation
+issues. The Budget source and header files were corrected and the module
+was successfully compiled.
 
-- Integrating independently developed modules
-- Resolving compilation errors
-- Handling inconsistent data or input
-- Coordinating changes between group members
-- Testing the complete integrated system
+Another challenge involved integrating independently developed modules
+into the main program. The modules were linked through the main program
+and tested as a complete system.
 
-The solutions used to resolve these issues will be documented in the final version of the report.
+Testing also identified validation limitations involving negative
+employee salaries and blank supplier names. These were recorded as known
+issues and recommended for future improvement.
 
----
+------------------------------------------------------------------------
 
 ## 9. Testing Results
 
-Final testing results will be added after all modules have been integrated.
+Final system testing was completed after integration.
 
-The results will include the expected outcome, actual outcome, test status, and supporting screenshots where applicable.
+The complete system successfully launched, displayed the main menu,
+navigated between modules, processed valid records and generated
+reports.
 
----
+The final testing record contains 24 tests covering compilation,
+navigation, module functionality, reports, input validation, searching,
+over-budget detection and system exit.
+
+Two validation tests failed:
+
+-   Negative employee salary validation
+-   Blank supplier name validation
+
+These known limitations are documented in `testing/test_results.md`,
+together with the expected and actual outcomes and supporting evidence.
+
+------------------------------------------------------------------------
 
 ## 10. Conclusion
 
-The Municipal Financial Management System provides a modular C-based approach to managing municipal financial information.
+The Municipal Financial Management System provides a modular C-based
+approach to managing municipal financial information.
 
-Our completed system will integrate employee, budget, supplier, asset, and reporting functionality into one application.
+The completed system integrates employee, budget, supplier, asset and
+reporting functionality into one application.
 
-The final evaluation of the system will be based on successful integration, functionality, input validation, and testing.
+Final testing confirmed that the main functionality operates
+successfully, while the identified validation limitations have been
+documented as areas for future improvement.
