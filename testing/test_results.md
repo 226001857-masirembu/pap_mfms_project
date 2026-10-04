@@ -48,8 +48,8 @@ option.
 
 **Evidence:**
 
-![Test 3 --- MFMS launch and main
-menu](mfms_test_evidence/test_03_main_menu.png)
+<img width="791" height="230" alt="test_03_main_menu" src="https://github.com/user-attachments/assets/c2a2364b-0ff7-4888-bcbb-16f292e56270" />
+
 
 ## Test 4 --- Invalid main-menu choice (9)
 
@@ -64,8 +64,8 @@ main menu.
 
 **Evidence:**
 
-![Test 4 --- Invalid main-menu choice
-(9)](mfms_test_evidence/test_04_invalid_main_menu.png)
+<img width="310" height="200" alt="test_04_invalid_main_menu" src="https://github.com/user-attachments/assets/66ab0df3-910b-4cef-9703-6d1bdfc54f3d" />
+
 
 ## Test 5 --- Employee Management
  Employee Management opened and its
@@ -76,8 +76,18 @@ functions were tested successfully.
  The Employee Management module opened successfully
 and its available functions were accessible and tested.
 
-**Evidence:** Screenshot captured during the testing session; no local
-image file was available for this generated GitHub package.
+<img width="655" height="197" alt="image" src="https://github.com/user-attachments/assets/2ed8c4d7-8bfb-4c10-a0d8-cb316193d642" />
+ successful employee.exe
+
+<img width="318" height="245" alt="image" src="https://github.com/user-attachments/assets/9e9969bb-9b60-4bc0-a7b7-aaf60f05bacc" />
+successful  add employee 
+
+ <img width="678" height="441" alt="image" src="https://github.com/user-attachments/assets/bad4bc58-9e6c-4b09-8ded-11a920791437" />
+
+ successful display employee
+
+ <img width="294" height="237" alt="image" src="https://github.com/user-attachments/assets/94773bde-43dd-44c6-af20-828418cd0c9d" />
+
 
 ## Test 6 --- Add Budget
 
@@ -91,7 +101,8 @@ budget was added successfully.
 
 **Evidence:**
 
-![Test 6 --- Add Budget](mfms_test_evidence/test_06_add_budget.png)
+<img width="308" height="344" alt="test_06_add_budget" src="https://github.com/user-attachments/assets/e380898a-aa92-4096-8fb7-3973bb399a43" />
+
 
 ## Test 7 --- Display Budgets
 
@@ -105,8 +116,8 @@ budget and its associated budget information.
 
 **Evidence:**
 
-![Test 7 --- Display
-Budgets](mfms_test_evidence/test_07_display_budget.png)
+<img width="673" height="649" alt="image" src="https://github.com/user-attachments/assets/de6be46d-5025-40ec-a35c-b559b45b2d68" />
+
 
 ## Test 8 --- Budget search miss
 
@@ -120,8 +131,7 @@ budget was not found.
 
 **Evidence:**
 
-![Test 8 --- Budget search
-miss](mfms_test_evidence/test_08_budget_search_miss.png)
+<img width="301" height="217" alt="test_08_budget_search_miss" src="https://github.com/user-attachments/assets/d010acb1-5b01-4123-bdcf-c68994f4f109" />
 
 ## Test 9 --- Add Supplier
 
@@ -135,7 +145,8 @@ the supplier and confirmed the operation.
 
 **Evidence:**
 
-![Test 9 --- Add Supplier](mfms_test_evidence/test_09_supplier_add.png)
+<img width="305" height="344" alt="test_09_supplier_add" src="https://github.com/user-attachments/assets/0e04ab37-f056-420e-8fc8-d2f5b8b2a4f1" />
+
 
 ## Test 10 --- Search Supplier
 
@@ -149,8 +160,7 @@ and displayed the stored supplier details.
 
 **Evidence:**
 
-![Test 10 --- Search
-Supplier](mfms_test_evidence/test_10_supplier_search.png)
+<img width="277" height="199" alt="test_10_supplier_search" src="https://github.com/user-attachments/assets/8fbf690e-7230-4f2b-afba-99b964922d44" />
 
 ## Test 11 --- Add Asset
 
@@ -164,7 +174,8 @@ asset and confirmed the operation.
 
 **Evidence:**
 
-![Test 11 --- Add Asset](mfms_test_evidence/test_11_asset_add.png)
+<img width="310" height="343" alt="test_11_asset_add" src="https://github.com/user-attachments/assets/d93151c2-9843-4fdb-8adf-ddd31b42da1b" />
+
 
 ## Test 12 --- Display Assets
 
@@ -178,8 +189,8 @@ details.
 
 **Evidence:**
 
-![Test 12 --- Display
-Assets](mfms_test_evidence/test_12_asset_display.png)
+<img width="248" height="221" alt="test_12_asset_display" src="https://github.com/user-attachments/assets/6f1b45b9-fadd-45b2-8cb5-98bdb5cf073e" />
+
 
 ## Test 13 --- Budget Report
 
@@ -191,8 +202,8 @@ displayed.
  The Budget Report successfully displayed the stored
 budget totals and Finance department details.
 
-**Evidence:** Screenshot captured during the testing session; no local
-image file was available for this generated GitHub package.
+<img width="337" height="325" alt="test_13_budget_report" src="https://github.com/user-attachments/assets/ee0c312a-4247-4984-9a9e-082fd57f89f0" />
+
 
 ## Test 14 --- Supplier Report
 
@@ -206,8 +217,8 @@ stored supplier information and total supplier count.
 
 **Evidence:**
 
-![Test 14 --- Supplier
-Report](mfms_test_evidence/test_14_supplier_report.png)
+<img width="305" height="292" alt="test_14_supplier_report" src="https://github.com/user-attachments/assets/943ec46e-0501-4437-919d-2f7799fe3401" />
+
 
 ## Test 15 --- Asset Report
 
@@ -219,8 +230,8 @@ displayed.
 The Asset Report successfully displayed the stored
 asset details.
 
-**Evidence:** Screenshot captured during the testing session; no local
-image file was available for this generated GitHub package.
+<img width="538" height="595" alt="image" src="https://github.com/user-attachments/assets/ca79195d-5ec3-4579-ae24-29cab2dde27c" />
+
 
 ## Test 16 --- Summary Report
 
@@ -231,9 +242,6 @@ successfully.
 
 The Summary Report was generated successfully using
 the available system data.
-
-**Evidence:** Screenshot captured during the testing session; no local
-image file was available for this generated GitHub package.
 
 ## Test 17 --- Invalid non-numeric input
 
@@ -246,6 +254,8 @@ Please enter a number:'
 displayed an appropriate validation message requesting a numeric value.
 
 **Evidence:**
+
+<img width="742" height="585" alt="image" src="https://github.com/user-attachments/assets/7fc2bca1-967a-400b-a8df-a4bdda9ded33" />
 
 ![Test 17 --- Invalid non-numeric
 input](mfms_test_evidence/test_17_invalid_numeric_input.png)
@@ -263,8 +273,8 @@ N\$4,000.
 
 **Evidence:**
 
-![Test 18 --- Enter
-Expenditure](mfms_test_evidence/test_18_expenditure_update.png)
+<img width="270" height="227" alt="test_18_expenditure_update" src="https://github.com/user-attachments/assets/7809375f-a8c9-479c-9072-d5e861339bf3" />
+
 
 ## Test 19 --- Over-budget detection
 
@@ -276,8 +286,7 @@ N\$5000 expenditure against N\$4000 allocated.
  The system correctly identified and displayed the
 Finance budget as exceeded.
 
-**Evidence:** Screenshot captured during the testing session; no local
-image file was available for this generated GitHub package.
+<img width="1672" height="941" alt="image" src="https://github.com/user-attachments/assets/9568a73b-6f1d-4acf-b812-8eeb9cee818e" />
 
 ## Test 20 --- Negative salary validation
 
@@ -292,8 +301,8 @@ for future improvement.
 
 **Evidence:**
 
-![Test 20 --- Negative salary
-validation](mfms_test_evidence/test_20_negative_salary_FAIL.png)
+<img width="285" height="309" alt="test_20_negative_salary_FAIL" src="https://github.com/user-attachments/assets/f7e54565-a404-4bad-abb9-a594c559d744" />
+
 
 ## Test 21 --- Negative budget validation
 
@@ -307,8 +316,8 @@ N\$-5,000 and prompted the user to enter a valid non-negative value.
 
 **Evidence:**
 
-![Test 21 --- Negative budget
-validation](mfms_test_evidence/test_21_negative_budget.png)
+<img width="293" height="218" alt="test_21_negative_budget" src="https://github.com/user-attachments/assets/ceabe39d-4de5-4fe2-b552-8b713e6026b2" />
+
 
 ## Test 22 --- Negative asset purchase value
 
@@ -320,9 +329,8 @@ validation](mfms_test_evidence/test_21_negative_budget.png)
 of N\$-1,000 and displayed an appropriate validation message.
 
 **Evidence:**
+<img width="262" height="159" alt="test_22_negative_asset_value" src="https://github.com/user-attachments/assets/1748f1dd-c65f-4bb7-b1d5-584a1376071e" />
 
-![Test 22 --- Negative asset purchase
-value](mfms_test_evidence/test_22_negative_asset_value.png)
 
 ## Test 23 --- Empty supplier name
 
@@ -336,12 +344,11 @@ for future improvement.
 
 **Evidence:**
 
-![Test 23 --- Empty supplier
-name](mfms_test_evidence/test_23_blank_supplier_name_FAIL.png)
+<img width="253" height="170" alt="test_23_blank_supplier_name_FAIL" src="https://github.com/user-attachments/assets/1c6d4f2b-75c2-493c-bba4-a804c2ae79c1" />
+
 
 ## Test 24 --- Exit option
-
-**Expected/observed result:** The program displayed 'Exiting system...'
+ The program displayed 'Exiting system...'
 and returned to PowerShell.
 
 **Result:** **PASS**
@@ -351,7 +358,8 @@ application and returned control to the command-line environment.
 
 **Evidence:**
 
-![Test 24 --- Exit option](mfms_test_evidence/test_24_exit.png)
+<img width="719" height="176" alt="test_24_exit" src="https://github.com/user-attachments/assets/a5c4e1e1-f8d4-4df7-a5fd-01aba59c4063" />
+
 
 ## Recommended Improvements / Future Improvements
 
