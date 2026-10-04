@@ -19,7 +19,15 @@ Repository: pap_mfms_project
 
 ## Testing
 
-Testing will be performed after all group modules have been completed and integrated.
+## Budget Module Support and Testing
+
+I supported the Budget module by identifying and correcting compilation issues in budget.c and budget.h. The original Budget code produced multiple compilation errors, including incorrect function declarations, input-handling issues, and syntax problems.
+
+The corrected Budget module was compiled using:
+gcc -std=c99 -Wall -Wextra -c budget.c -o budget.o to compile
+
+##  Testing ## 
+I carried out testing on all the individual modules and recorded the findings aswell as corrected the code when needed.
 
 ### Planned Tests
 
@@ -32,6 +40,5 @@ Testing will be performed after all group modules have been completed and integr
 - Test invalid input and menu choices.
 - Test the complete integrated program.
 
-## Evidence
 
 Screenshots and other evidence of testing and GitHub contributions will be added as the project progresses.
