@@ -60,7 +60,7 @@ void addEmployee()
     printf("\nEmployee added successfully!\n");
 }
 
-// Function to calculate salary
+
 float calculateSalary(int index)
 {
     float grossSalary;
@@ -70,7 +70,7 @@ float calculateSalary(int index)
     return grossSalary;
 }
 
-// Function to display all employees
+
 void displayEmployees()
 {
     int i;
@@ -141,7 +141,7 @@ void searchEmployee()
     }
 }
 
-// Function to calculate and display salary information
+
 void displaySalary()
 {
     int id;
@@ -184,7 +184,7 @@ void displaySalary()
     }
 }
 
-// Main function
+
 int main()
 {
     int choice;
