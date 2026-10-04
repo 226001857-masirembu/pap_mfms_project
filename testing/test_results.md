@@ -26,7 +26,7 @@ successful employee search
 
 successful calculations of employee salary
 
-## Budgeting ##
+## Budget ##
 
 The Budget module initially contained multiple compilation errors involving input functions, character/string syntax, and function declarations. The budget.c and budget.h files were corrected and the module was compiled again successfully.
 
