@@ -3,7 +3,6 @@
 
 void addSupplier(void);
 void displaySuppliers(void);
-void searchSuppliers(void);
-void compareSuppliers(void);
+void searchSupplier(void);
 
 #endif
