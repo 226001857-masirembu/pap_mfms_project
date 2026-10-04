@@ -1,23 +1,10 @@
 # MFMS Test Results
 
-## Testing Status
+Integration Review – Reports Module
 
-Final testing will be completed after all system modules have been developed and integrated.
+During review of the Reports module, compatibility differences were identified between the report functions and the Supplier/Asset data structures. The Reports module currently expects parallel arrays, while the Supplier and Asset modules use structures.
 
-## Test Results
 
-| Test | Expected Result | Actual Result | Status | Evidence |
-|---|---|---|---|---|
-| Main menu | Main menu displays correctly | Pending | Pending | — |
-| Employee management | Employee records can be added, displayed and searched | Pending | Pending | — |
-| Salary calculation | Salary information is calculated correctly | Pending | Pending | — |
-| Budget management | Budget and expenditure information is recorded | Pending | Pending | — |
-| Remaining funds | Remaining budget is calculated correctly | Pending | Pending | — |
-| Supplier management | Supplier records can be added, displayed and searched | Pending | Pending | — |
-| Asset management | Asset records can be added, displayed and searched | Pending | Pending | — |
-| Reports | Reports display the correct information | Pending | Pending | — |
-| Invalid input | Invalid input is handled appropriately | Pending | Pending | — |
-| Full integration | All modules work together correctly | Pending | Pending | — |
 
 ## Testing Evidence
 
