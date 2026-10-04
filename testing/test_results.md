@@ -28,6 +28,16 @@ successful calculations of employee salary
 
 ## Budgeting ##
 
+The Budget module initially contained multiple compilation errors involving input functions, character/string syntax, and function declarations. The budget.c and budget.h files were corrected and the module was compiled again successfully.
+
+<img width="1390" height="885" alt="image" src="https://github.com/user-attachments/assets/77544660-80c4-4331-9d26-98d9120ab238" />
+code with error
+
+<img width="1339" height="142" alt="image" src="https://github.com/user-attachments/assets/046cac7a-fb01-4270-89aa-934ff7476020" />
+
+successful compilation. 
+
+
 ## Assets ##
 
 During intial testing, the Asset module was compiled separately using gcc assets.c -o assets. The compilation/linking failed with the error undefined reference to 'WinMain'. This occurred because assets.c does not contain a main() function and is intended to operate as a module within the complete Municipal Financial Management System. To fix this we have to link the asset to the main.c
@@ -38,7 +48,6 @@ During intial testing, the Supplier module was compiled separately using gcc sip
 ## Report ##
 
 During intial testing, the Supplier module was compiled separately using gcc report.c -o report. The compilation/linking failed with the error undefined reference to 'WinMain'. This occurred because report.c does not contain a main() function and is intended to operate as a module within the complete Municipal Financial Management System. To fix this we have to link the report to the main.c
-
 
 
 
