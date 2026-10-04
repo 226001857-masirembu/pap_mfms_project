@@ -2,21 +2,16 @@
 #include <string.h>
 #include <stdlib.h>
 #include "budget.h"
-#define MAX_BUDGETS 50
-#define MAX_DEPT_NAME 50
 Budget budgets[MAX_BUDGETS];
 int budgetCount = 0;
-/* Clear unwanted characters from the input buffer /
 void clearInputBuffer(void)
 {
 int c;
 while ((c = getchar()) != '
 ' && c != EOF)
 {
-/* discard input /
 }
 }
-/* Read a non-empty string /
 void getStringInput(char buffer, int size)
 {
 if (fgets(buffer, size, stdin) != NULL)
@@ -24,7 +19,6 @@ if (fgets(buffer, size, stdin) != NULL)
 buffer[strcspn(buffer, "
 ")] = '\0';
 }
-/* Remove leading spaces /
 int i = 0;
 int j = 0;
 while (buffer[i] == ' ')
@@ -33,11 +27,12 @@ i++;
 }
 while (buffer[i] != '\0')
 {
-buffer[j++] = buffer[i++];
+buffer[j] = buffer[i];
+j++;
+i++;
 }
 buffer[j] = '\0';
 }
-/* Read a non-negative double /
 int getDoubleInput(double value)
 {
 char input[100];
@@ -58,17 +53,17 @@ return 0;
 }
 return 1;
 }
-/* Calculate remaining budget /
 double calculateRemainingBudget(int index)
 {
 budgets[index].remainingBudget =
-budgets[index].allocatedBudget - budgets[index].expenditure;
+budgets[index].allocatedBudget -
+budgets[index].expenditure;
 return budgets[index].remainingBudget;
 }
-/* Check whether a budget is over budget /
 int checkBudgetStatus(int index)
 {
-if (budgets[index].expenditure > budgets[index].allocatedBudget)
+if (budgets[index].expenditure >
+budgets[index].allocatedBudget)
 {
 strcpy(budgets[index].status, "EXCEEDED");
 return 1;
@@ -76,7 +71,6 @@ return 1;
 strcpy(budgets[index].status, "WITHIN BUDGET");
 return 0;
 }
-/* Search for a department /
 int searchBudgetByDepartment(const char deptName)
 {
 int i;
@@ -89,14 +83,14 @@ return i;
 }
 return -1;
 }
-/* Display one budget /
 void displayBudgetInfo(int index)
 {
 printf("
 -----------------------------
 ");
 printf("Department: %s
-", budgets[index].department);
+",
+budgets[index].department);
 printf("Allocated Budget: N$%.2f
 ",
 budgets[index].allocatedBudget);
@@ -112,7 +106,6 @@ budgets[index].status);
 printf("-----------------------------
 ");
 }
-/* Add a new department budget /
 void addBudget(void)
 {
 char tempDept[MAX_DEPT_NAME];
@@ -154,7 +147,6 @@ budgetCount++;
 printf("Budget added successfully!
 ");
 }
-/* Enter expenditure for a department /
 void enterExpenditure(void)
 {
 char deptName[MAX_DEPT_NAME];
@@ -195,7 +187,6 @@ calculateRemainingBudget(index);
 checkBudgetStatus(index);
 displayBudgetInfo(index);
 }
-/* Display all budgets /
 void displayBudgets(void)
 {
 int i;
@@ -229,7 +220,6 @@ printf("Total Expenditure: N$%.2f
 printf("Total Remaining: N$%.2f
 ", totalRem);
 }
-/* Display departments that are over budget /
 void displayExceedingBudgets(void)
 {
 int i;
@@ -252,7 +242,6 @@ printf("All departments are WITHIN BUDGET.
 ");
 }
 }
-/* Budget management menu /
 void budgetManagementMenu(void)
 {
 int choice;
