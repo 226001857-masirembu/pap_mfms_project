@@ -6,9 +6,9 @@
 
 **Members**: 
 
-Andreas
+Andrias
 
-Martin 
+Jonas
 
 Chiedza 
 
@@ -16,7 +16,7 @@ Jeremiah
 
 Vistorino
 
-Glorie
+Inenecia
 
 Selwyn 
 
@@ -38,13 +38,13 @@ Our system aims to create a financial management system in C that displays and c
 
 **Responsibilities**
  
-  Andreas -  Employee Management 
-  
-  Martin - Functions, integration and validation 
+  Andrias -  Employee Management 
+
+ Jonas - Functions, integration and validation 
   
   Chiedza - Testing, documentation and Git coordination 
   
-  Glorie -  Budget Management 
+ Inenecia -  Budget Management 
   
   Vistorina - Supplier Management 
   
