@@ -20,8 +20,8 @@
 
 The Municipal Financial Management System (MFMS) is a C-based system
 designed to manage municipal financial information. The system manages
-employee, budget, supplier and asset records and generates reports based
-on the stored information.
+employee, budget, supplier and asset recrds and generates reports based
+on the stored infomation.
 
 ## System Features
 
@@ -38,9 +38,8 @@ on the stored information.
 
 ## Technologies
 
--   C programming language (C99)
+-   C programming language 
 -   GCC compiler
--   Git
 -   GitHub
 
 ## Compile
@@ -48,12 +47,7 @@ on the stored information.
 The complete system was compiled using GCC with the C99 standard and
 warning flags:
 
-``` bash
-gcc -std=c99 -Wall -Wextra main.c employee.c budget.c suppliers.c assets.c reports.c -o mfms
-```
-
-The final project compiled successfully with no compiler errors or
-warnings.
+The final project compiled successfully with minil no compiler errors.
 
 ## Run
 
@@ -61,12 +55,6 @@ On Windows:
 
 ``` bash
 mfms.exe
-```
-
-On Linux/macOS:
-
-``` bash
-./mfms
 ```
 
 ## Responsibilities
@@ -92,11 +80,11 @@ Testing included:
 -   Invalid numeric input
 -   Negative salary validation
 -   Negative budget validation
--   Negative asset value validation
+-   Negative asset vaue validation
 -   Supplier search
 -   Budget search
 -   Reports
--   Over-budget detection
+-   Over-budget detectio
 -   System exit
 -   Full project compilation and integration
 
@@ -106,14 +94,14 @@ evidence are documented in `testing/test_results.md`.
 Two known validation limitations were identified during testing:
 
 1.  The Employee module currently accepts a negative basic salary.
-2.  The Supplier module currently accepts a blank supplier name.
+2.  The Supplier module curretly accepts a blank supplier name.
 
 These are documented as known limitations and recommended future
 improvements.
 
 ## Contributions
 
-Individual contribution records are maintained in the `contributions/`
+Individual contribution records are in the `contributions/`
 directory.
 
 ## Repository
