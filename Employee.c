@@ -1,7 +1,6 @@
 #include <stdio.h>
 #include <string.h>
 
-#define MAX_EMPLOYEES 100
 
 int employeeID[MAX_EMPLOYEES];
 char name[MAX_EMPLOYEES][50];
