@@ -1,0 +1,45 @@
+Individual Contribution Record
+Student Name: Selwyn Eiseb
+Student Number: 225025626
+Assigned Responsibility: Reports Module
+
+Functions/Modules Developed:
+
+I developed the Reports module for the Municipal Financial Management System. The module includes:
+
+Employee Report
+Budget Report
+Supplier Report
+Asset Report
+Municipal Summary Report
+Reports Menu
+
+The Employee Report calculates and displays the total number of employees, total salary expense, average salary, highest salary, lowest salary, highest paid employee and lowest paid employee.
+
+The Budget Report calculates and displays the total allocated budget, total expenditure, remaining budget and the number of departments that are within or over budget. It also shows the budget status of each department.
+
+The Supplier Report displays the total number of registered suppliers together with their names, emails, phone numbers and towns.
+
+The Asset Report displays registered assets and calculates the total asset value, average asset value, most expensive asset and cheapest asset.
+
+The Summary Report provides an overall summary of employee, budget, supplier and asset information.
+GitHub Contribution:
+
+I created and uploaded the Reports module files to the group GitHub repository. My contribution includes:
+reports.c
+reports.h
+
+The reports.c file contains the main Reports functions and calculations, while reports.h contains the function declarations used to connect the Reports module to the rest of the system.
+
+Testing Performed:
+I tested the Reports module to make sure that:
+
+The Reports menu displays correctly.
+Each report option opens correctly.
+Employee salary totals, averages, highest and lowest salaries are calculated correctly.
+Budget totals, expenditure, remaining balances and budget statuses are calculated correctly.
+Supplier information is displayed correctly.
+Asset totals, averages, highest and lowest values are calculated correctly.
+The Summary Report displays the correct totals.
+Invalid report menu choices are handled.
+The user can return from the Reports menu to the main system menu.
