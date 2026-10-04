@@ -4,6 +4,7 @@
 #include "employee.h"
 #include "budget.h"
 #include "suppliers.h"
+#include "reports.h"
 
 int readInt(void);
 double readNonNegativeDouble(void);
@@ -267,8 +268,8 @@ int main(void)
                 assetMenu();
                 break;
 
-            case 5:
-                printf("Reports selected.\n");
+           case 5:
+                reportsMenu();
                 break;
 
             case 6:
