@@ -1,11 +1,15 @@
 #include <stdio.h>
 #include <string.h>
 #include "assets.h"
+#include "employee.h"
+#include "budget.h"
+#include "suppliers.h"
 
 int readInt(void);
 double readNonNegativeDouble(void);
 void readNonEmptyString(char *text, int size);
 void assetMenu(void);
+void employeeMenu(void);
 
 int readInt(void)
 {
@@ -144,6 +148,54 @@ void assetMenu(void)
 
     } while (choice != 4);
 }
+void employeeMenu(void)
+{
+    int choice;
+
+    do
+    {
+        printf("\n");
+        printf("=============================\n");
+        printf("     EMPLOYEE MANAGEMENT\n");
+        printf("=============================\n");
+        printf("1. Add Employee\n");
+        printf("2. Display Employees\n");
+        printf("3. Search Employee\n");
+        printf("4. Display Salary\n");
+        printf("5. Return to Main Menu\n");
+        printf("=============================\n");
+        printf("Enter your choice: ");
+
+        choice = readInt();
+
+        switch (choice)
+        {
+            case 1:
+                addEmployee();
+                break;
+
+            case 2:
+                displayEmployees();
+                break;
+
+            case 3:
+                searchEmployee();
+                break;
+
+            case 4:
+                displaySalary();
+                break;
+
+            case 5:
+                printf("Returning to main menu...\n");
+                break;
+
+            default:
+                printf("Invalid choice. Please select 1-5.\n");
+        }
+
+    } while (choice != 5);
+}
 
 int main(void)
 {
@@ -158,18 +210,58 @@ int main(void)
 
         switch (choice)
         {
+           case 1:
+          employeeMenu();
+           break;
+
+            case 2:
+           budgetManagementMenu();
+           break;
+
+      case 3:
+    while (1)
+    {
+        int supplierChoice;
+
+        printf("\n=============================\n");
+        printf("     SUPPLIER MANAGEMENT\n");
+        printf("=============================\n");
+        printf("1. Add Supplier\n");
+        printf("2. Display Suppliers\n");
+        printf("3. Search Supplier\n");
+        printf("4. Return to Main Menu\n");
+        printf("=============================\n");
+
+        printf("Enter your choice: ");
+        scanf("%d", &supplierChoice);
+
+        switch (supplierChoice)
+        {
             case 1:
-                printf("Employee Management selected.\n");
+                addSupplier();
                 break;
 
             case 2:
-                printf("Budget Management selected.\n");
+                displaySuppliers();
                 break;
 
             case 3:
-                printf("Supplier Management selected.\n");
+                searchSupplier();
                 break;
 
+            case 4:
+                break;
+
+            default:
+                printf("Invalid choice. Please select 1-4.\n");
+        }
+
+        if (supplierChoice == 4)
+        {
+            break;
+        }
+    }
+    break;
             
             case 4:
                 assetMenu();
